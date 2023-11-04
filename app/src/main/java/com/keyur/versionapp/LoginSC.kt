@@ -27,14 +27,6 @@ class LoginSC : AppCompatActivity() {
             welcomTxt.isVisible = true
             welcomTxt.text = "Hello ${emailText.text}"
 
-            val progress: ProgressDialog
-            progress = ProgressDialog(this)
-            progress.setTitle("Please Wait!!")
-            progress.setMessage("Wait!!")
-            progress.setCancelable(true)
-            progress.setProgressStyle(ProgressDialog.STYLE_SPINNER)
-            progress.show()
-
             Handler(Looper.getMainLooper()).postDelayed({
                 var intent = Intent(this,HomeSC::class.java)
                 intent.putExtra("email",emailText.text.toString())

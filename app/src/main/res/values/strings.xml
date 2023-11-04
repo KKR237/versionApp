@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">versionApp</string>
+    <string name="version_tag">Release Version</string>
 </resources>

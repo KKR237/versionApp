@@ -35,22 +35,22 @@ android {
     // Specifies one flavor dimension.
     flavorDimensions += "version"
     productFlavors {
-        create("demo") {
+        create("free") {
             // Assigns this product flavor to the "version" flavor dimension.
             // If you are using only one dimension, this property is optional,
             // and the plugin automatically assigns all the module's flavors to
             // that dimension.
             dimension = "version"
-            applicationIdSuffix = ".demo"
-            versionNameSuffix = "-demo"
+            applicationIdSuffix = ".free"
+            versionNameSuffix = "-free"
             // You can also use a different appid:
 //            applicationId = "com.example.myapp.flavor1"
 //            versionName =  "1.0-flavor1"
         }
-        create("full") {
+        create("vip") {
             dimension = "version"
-            applicationIdSuffix = ".full"
-            versionNameSuffix = "-full"
+            applicationIdSuffix = ".vip"
+            versionNameSuffix = "-vip"
         }
     }
 
